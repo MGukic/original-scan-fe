@@ -2,12 +2,13 @@ import styled from "styled-components";
 import backgroundImg from "../assets/background.jpg";
 
 import { Text } from "../Text";
+import Icon from "../Icon";
 
 const MainPage: React.FunctionComponent = () => {
   return (
     <MainPageWrapper>
       <MainPageHeadingWrapper>
-        {/* <img src="../assets/ring.png" /> */}
+        <Icon name="ring-parfume" size={43} />
         <MainPageTitle type="Header H1 800" color="black">
           IMMUTED
         </MainPageTitle>
@@ -29,13 +30,14 @@ const MainPageHeadingWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-top: 174px;
-  margin-bottom: auto; /* Center vertically within MainPageWrapper */
+  margin-top: 115px;
+  margin-bottom: auto;
 `;
 
 const MainPageTitle = styled(Text)`
-  margin: 0px;
+  margin: 16px 0 0 0;
 `;
 
 export default MainPage;
