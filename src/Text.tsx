@@ -107,8 +107,10 @@ export const Text = styled(TextComponent)<TextProps>`
       case "Header H1 800":
         return `
         font-size: 60px;
-        font-weight: 400;
+        font-weight: 600;
+        font-style: normal;
         line-height: 54px;
+        letter-spacing: 3.6px;
         font-family: Alta-Regular;
       `;
 
@@ -117,7 +119,6 @@ export const Text = styled(TextComponent)<TextProps>`
         font-size: 36px;
         font-weight: 700;
         line-height: 42px;
-        font
       `;
 
       case "Header H3 700":
@@ -125,7 +126,6 @@ export const Text = styled(TextComponent)<TextProps>`
         font-size: 32px;
         font-weight: 700;
         line-height: 38px;
-        font
       `;
 
       case "Header H4 700":
@@ -134,7 +134,6 @@ export const Text = styled(TextComponent)<TextProps>`
         font-size: 24px;
         line-height: 30px;
         letter-spacing: 0.3px;
-        font
       `;
 
       case "Header H4 500":
@@ -143,7 +142,6 @@ export const Text = styled(TextComponent)<TextProps>`
         font-size: 24px;
         line-height: 30px;
         letter-spacing: 0.3px;
-        font
       `;
 
       case "Body large 500":
@@ -151,7 +149,6 @@ export const Text = styled(TextComponent)<TextProps>`
         font-weight: 500;
         font-size: 18px;
         line-height: 24px;
-        font
       `;
 
       case "Body large 400":
@@ -159,7 +156,6 @@ export const Text = styled(TextComponent)<TextProps>`
         font-weight: 400;
         font-size: 18px;
         line-height: 24px;
-        font
       `;
 
       case "Body medium 700":
@@ -167,14 +163,12 @@ export const Text = styled(TextComponent)<TextProps>`
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
-        font
       `;
       case "Body medium 500":
         return `
         font-weight: 500;
         font-size: 16px;
         line-height: 22px;
-        font
       `;
 
       case "Body medium 400":
@@ -182,7 +176,6 @@ export const Text = styled(TextComponent)<TextProps>`
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
-        font
       `;
 
       case "Body small 600":
@@ -190,6 +183,7 @@ export const Text = styled(TextComponent)<TextProps>`
         font-weight: 600;
         font-size: 16px;
         line-height: 19.2px;
+        font-family: Archivo-Regular;
       `;
 
       case "Body xsmall 700":
@@ -197,7 +191,6 @@ export const Text = styled(TextComponent)<TextProps>`
         font-weight: 700;
         font-size: 12px;
         line-height: 18px;
-        font
       `;
 
       case "Body xsmall 600":
@@ -205,7 +198,6 @@ export const Text = styled(TextComponent)<TextProps>`
         font-weight: 600;
         font-size: 12px;
         line-height: 18px;
-        font
       `;
 
       case "Body xsmall 500":
@@ -213,7 +205,6 @@ export const Text = styled(TextComponent)<TextProps>`
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
-        font
       `;
 
       case "Status bar 700":
@@ -221,7 +212,6 @@ export const Text = styled(TextComponent)<TextProps>`
         font-weight: 700;
         font-size: 10px;
         line-height: 16px;
-        font
       `;
     }
   }}
