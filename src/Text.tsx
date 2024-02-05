@@ -102,6 +102,7 @@ const TextComponent: FunctionComponent<TextProps> = ({
 }: TextProps) => <Component className={className}>{children}</Component>;
 
 export const Text = styled(TextComponent)<TextProps>`
+  margin: 0;
   ${({ type = "Header H1" }) => {
     switch (type) {
       case "Header H1 800":
@@ -139,9 +140,8 @@ export const Text = styled(TextComponent)<TextProps>`
       case "Header H4 500":
         return `
         font-weight: 500;
-        font-size: 24px;
-        line-height: 30px;
-        letter-spacing: 0.3px;
+        font-size: 20px;
+        font-family: Archivo-Regular;
       `;
 
       case "Body large 500":
@@ -197,7 +197,10 @@ export const Text = styled(TextComponent)<TextProps>`
         return `
         font-weight: 600;
         font-size: 12px;
-        line-height: 18px;
+        letter-spacing: 0.36px;
+        line-height: normal;
+        font-family: Archivo-Regular;
+
       `;
 
       case "Body xsmall 500":
@@ -223,7 +226,7 @@ export const Text = styled(TextComponent)<TextProps>`
       case "green":
         return theme.textGreen;
       case "white":
-        return theme.textColorLight;
+        return "#F1EEEB";
       case "black":
         return "#140B0C";
       case "gray":
